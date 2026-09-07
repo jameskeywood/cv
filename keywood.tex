@@ -1,0 +1,88 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{geometry} % allow page sizing
+\usepackage{helvet} % set font
+\usepackage{titlesec} % title fomatting
+\usepackage{hyperref} % allow links
+\usepackage{graphicx} % allow images
+\usepackage{multirow} % row and column merging
+\usepackage{fontawesome5} % allow icons
+
+\usepackage[dvipsnames]{xcolor} % use colors
+\usepackage[T1]{fontenc} % font type
+\usepackage[utf8]{inputenc} % utf8 input encoding
+\usepackage[none]{hyphenat} % no hyphens
+
+\definecolor{Theme}{RGB}{17, 119, 170} % set accent theme
+
+\colorlet{Highlight}{Theme!15} % This creates a version that is 15% Theme and 85% white
+
+\geometry{a4paper, margin=0.3in} % set page sizing
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=Theme} % link formatting
+\graphicspath{ {./images/} } % define path to images
+\titleformat{\section}{\color{black}\Large\bfseries}{}{1em}{}[\titlerule] % set title format
+\pagestyle{empty} % define page style
+
+\begin{document}
+
+\begin{tabular}{ p{2.6in} p{1.9in} p{2.2in} }
+    \multirow{2}{2.6in}{\Huge{\textbf{\color{Theme}James Keywood}}} & \faSearch \quad \href{https://jameskeywood.github.io/}{jameskeywood.github.io} & \faGithub \quad \href{https://github.com/jameskeywood}{github.com/jameskeywood}\\
+    & \faGamepad \quad \href{https://jameskeywood.itch.io/}{jameskeywood.itch.io} & \faLinkedin \quad \href{https://www.linkedin.com/in/jameskeywood/}{linkedin.com/in/jameskeywood}\\\\
+\end{tabular}
+
+\begin{tabular}{ p{2.5in} p{1.8in} p{2.5in} }
+    \faEnvelope \quad \href{mailto:jskeywood@gmail.com}{\textbf{jskeywood@gmail.com}} & \faPhone \quad +447835702808 & \faGraduationCap \quad Expected graduation: 2027\\
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{ l p{5.5in} }
+    \textbf{Undergraduate} & \textbf{University of Manchester} | Oxford Rd, Manchester M13 9PL\\
+    Sep 2023 - Present & BSc Computer Science with Industrial Experience, active member of several societies\\
+    \textit{Expected first-class} & Achieved first-class grades of \textbf{79\%} in the first year, and \textbf{76\%} in the second year\\\\
+    
+    \multicolumn{2}{c}{Studied \textbf{programming \& paradigms}, \textbf{algorithms \& data structures}; committed to pursue further expertise}\\
+    \multicolumn{2}{c}{These modules offered hands-on experience with \textbf{Python}, \textbf{Java}, \textbf{C}, \textbf{Rust} and \textbf{software engineering} fundamentals}\\\\
+    
+    \textbf{A-levels, GCSEs} & \textbf{Kingston Grammar School} | 70 London Rd, Kingston upon Thames KT2 6PY\\
+    Sep 2016 - Jun 2023 & Mathematics, Further Mathematics, Computer Science, Physics \textbf{A*A*A*A*}\\
+    \textit{Academic scholar} & EPQ exploring the Generative Adversarial Network \textbf{A}, GCSEs \textbf{999999999A}
+\end{tabular}
+
+\section{Experience}
+\begin{tabular}{ c l p{15in} }
+    \multirow{2}{1.5em}{\includegraphics[width=0.6cm]{nomura.png}} & \textbf{Software engineer} & \href{https://www.nomura.com/}{\textbf{nomura.com}} | \textit{Java, Python, SQL, Dremio, Apache Iceberg, MinIO, Oracle}\\
+    & Jun 2025 - Jun 2026 & Maintained the trade and risk data warehouse supporting firm-wide analytics\\
+    & \textit{Industrial placement} & Planned and executed major platform upgrades and core architectural migrations\\\\
+    
+    \multicolumn{3}{l}{Collaborated within a \textbf{global team of 50} to maintain and modernise a large-scale centralised data warehouse}\\
+    \multicolumn{3}{l}{Replatformed business ETL flow from Oracle to a lakehouse architecture using \textbf{Dremio, Iceberg and MinIO}}\\
+    \multicolumn{3}{l}{Delivered critical platform upgrades and \textbf{CI/CD pipelines}, increasing build stability and deployment efficiency}\\\\
+    
+    \multirow{2}{1.5em}{\includegraphics[width=0.6cm]{wimbledon.png}} & \textbf{Court services} & \href{https://www.wimbledon.com/index.html}{\textbf{wimbledon.com}} | \textit{Teamwork, Time management}\\
+    & Jun 2024 - Jul 2024 & Dressed and covered grass tennis courts in a team of 6, ready for play\\
+    & \textit{Full time} & Aided players, staff and spectators for up to 12 hours a day for 2 weeks\\\\
+    \multirow{2}{1.5em}{\includegraphics[width=0.6cm]{theitstore.jpg}} & \textbf{Repair technician} & \href{https://www.theitstore.com/}{\textbf{theitstore.com}} | \textit{RepairDesk, Product repair, Sales}\\
+    & May 2022 - Nov 2022 & Apple product repairs, customer service, retail sales and advertising\\
+    & \textit{Part time} & This required knowledge surrounding Apple's product line and new releases\\\\
+    \multirow{2}{1.5em}{\includegraphics[width=0.6cm]{goldclipper.png}} & \textbf{Software engineer} & \href{https://goldclipper.co.uk/}{\textbf{goldclipper.co.uk}} | \textit{Oracle APEX, Oracle Database, PL/SQL}\\
+    & Jun 2021 - Jul 2021 & Use of Oracle Application Express software to develop an internal use application\\
+    & \textit{Internship} & The application tracked 6 employee timesheets and calculated required payslips\\
+\end{tabular}
+
+\section{Projects}
+\begin{tabular}{ l p{15in} }
+    \textbf{Tig} & \href{https://greatunihack.com/}{\textbf{greatunihack.com}} | \textit{Go, Gin, HTML, CSS, JavaScript}\\
+    Nov 2024 - Nov 2024 & Git companion tool for developers to track and visualise files alongside commits\\
+    \textit{Hackathon} & Built the CLI with Go and a custom algorithm to view Git repositories in 24 hours\\\\
+    \textbf{Starmapper} & \href{https://mcrstudenthack.com/}{\textbf{mcrstudenthack.com}} | \textit{Python, TensorFlow, Flask, HTML, CSS, JavaScript}\\
+    May 2024 - May 2024 & Web app to identify stars and clusters from an uploaded image, in a team of 3\\
+    \textit{Hackathon} & Created a machine learning algorithm with Python to classify 16 constellations\\\\
+    \textbf{lightr} & \textbf{Team project} | \textit{Python, SQLite3, Flask, HTML, CSS, JavaScript}\\
+    Sep 2023 - Jun 2024 & Workout tracking web application developed in an assigned team of 7\\
+    \textit{Coursework} & Log gym exercises, track food intake, customise profile and view progress graphs\\\\
+    \textbf{Ninja Fruit} & \href{https://itch.io/jam/gmtk-2023}{\textbf{itch.io/jam/gmtk-2023}} | \textit{Unity, C\#}\\
+    Jul 2023 - Jul 2023 & Game created within 48 hours, leading a team of 2 others as the sole programmer\\
+    \textit{Game jam} & Players throw fruit at enemies to survive and progress through 3 challenging levels\\\\
+\end{tabular}
+
+\end{document}
